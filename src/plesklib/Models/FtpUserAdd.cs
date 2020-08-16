@@ -36,10 +36,16 @@
         [XmlElement("home")] 
         public string home { get; set; }
 
+        [XmlElement("create-non-existent")]
+        public bool CreateDirectoryIfNotExists { get; set; }
+
         [XmlElement("quota")]
         public int quota { get; set; }
 
+        [XmlElement("permissions")]
+        public FtpUserGetPermissions permissions { get; set; }
+
         [XmlElement("webspace-name")] 
-        public string wespacename { get; set; }
+        public string webspacename { get; set; }
     }
 }
