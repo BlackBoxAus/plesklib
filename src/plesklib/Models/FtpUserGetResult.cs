@@ -82,6 +82,9 @@ namespace maestropanel.plesklib.Models
 
     public class FtpUserGetPermissions
     {
+        /// <summary>
+        /// Summary
+        /// </summary>
         [XmlElement("read")]
         public bool read { get; set; }
 
